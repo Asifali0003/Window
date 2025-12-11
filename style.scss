@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+  margin: 0;
+  background: url("https://4kwallpapers.com/images/walls/thumbs_3t/8710.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+
+  .icon{
+    width: 70px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    img{
+      width: 60px;
+
+      span{
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  #start-menu{
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    width: 220px;
+    background: white;
+    border-radius: 6px;
+    color: black;
+    box-shadow: 0px 0px 10px #0004;
+    display: none;
+
+    h3{
+      margin: 0;
+      padding: 15px;
+      background: #f0f0f0;
+    }
+
+    .start-item{
+      padding: 12px;
+      cursor: pointer;
+    }
+  }
+
+  .start-item:hover {
+  background: #d8cece;
+}
+
+  #window {
+    width: 400px;
+    height: 300px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0006;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    display: none;
+
+    #window-header {
+      background: #0078d4;
+      color: white;
+      padding: 10px;
+      cursor: move;
+      border-radius: 6px 6px 0 0;
+
+    }
+    #window-body{
+      padding: 15px;
+    }
+  }
+
+  #taskbar{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .start-btn{
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 18px;
+      border-radius: 6px;
+    }
+  }
+
+  #context-menu{
+    position: absolute;
+    width: 160px;
+    background: white;
+    box-shadow: 0 0 10px #0003;
+    display: none;
+    padding: 5px 0;
+    border-radius: 6px;
+    color: black;
+    z-index: 15;
+
+    li{
+      padding: 10px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    }
+
+    #context-menu li:hover {
+  background: #ddd;
+}
+}
