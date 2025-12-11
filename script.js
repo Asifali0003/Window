@@ -30,7 +30,6 @@ iconExplorer.addEventListener('dblclick', function(){
     win.style.display = "block";
     
 });
-console.log(iconExplorer);
 
 
 let offsetX = 0, offsetY=0, isDown = false;
@@ -51,3 +50,8 @@ document.addEventListener('mousemove' , function(e){
     win.style.top = (e.clientY - offsetY) + "px";
     }
 });
+
+let date = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+const timeDisplay = document.querySelector('.taskbar-right')
+
+timeDisplay.textContent = date;
